@@ -1,0 +1,6 @@
+# Ignore...
+**/bin/Debug/*/*.*
+**/obj/
+
+# ...but include
+!**/bin/Debug/*/*.exe
