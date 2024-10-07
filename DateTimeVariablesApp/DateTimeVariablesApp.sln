@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeVariables", "DateTimeVariables\DateTimeVariables.csproj", "{44772F3A-4CE9-46EC-B6E2-8E96EF0D3CBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44772F3A-4CE9-46EC-B6E2-8E96EF0D3CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44772F3A-4CE9-46EC-B6E2-8E96EF0D3CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44772F3A-4CE9-46EC-B6E2-8E96EF0D3CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44772F3A-4CE9-46EC-B6E2-8E96EF0D3CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51558F58-D0E0-470F-A1C5-46048183050B}
+	EndGlobalSection
+EndGlobal
