@@ -20,6 +20,17 @@ public static class ConsoleMessages
         return name;
     }
 
+    public static (string firstName, string lastName) GetFullName()
+    {
+        Console.WriteLine("What is your first name?");
+        string firstName = Console.ReadLine();
+
+        Console.WriteLine("What is your last name?");
+        string lastName = Console.ReadLine();
+
+        return (firstName, lastName);
+    }
+
     public static void SayGoodbye()
     {
         Console.WriteLine("Bye User");

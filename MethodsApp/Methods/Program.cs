@@ -19,3 +19,7 @@ MathShortcuts.AddAll(vals);
 
 string name = ConsoleMessages.GetUsersName();
 ConsoleMessages.GreetByName(name);
+
+// Discard character (_) ex: (string firstName, _)
+(string firstName, string lastName) fullName = ConsoleMessages.GetFullName();
+Console.WriteLine($"First Name: {fullName.firstName}, Last Name: {fullName.lastName}");
