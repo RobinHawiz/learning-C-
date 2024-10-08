@@ -1,1 +1,1 @@
-Random stuff while I'm learning C#. Program.cs contains the written code.
+Random stuff while I'm learning C#. Program.cs (and other files with a ".cs" extension) contains the written code.
