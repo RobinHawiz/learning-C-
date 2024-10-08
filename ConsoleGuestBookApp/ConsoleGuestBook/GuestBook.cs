@@ -12,5 +12,18 @@ public static class GuestBook
     {
         guestBook.Add(partyName, partyAmount);
     }
+
+    public static Dictionary<string, int> registerGuests()
+    {
+        Dictionary<string, int> guestBook = new();
+        while (ConsoleMessages.askIfRegisterAnotherGuest())
+        {
+            ConsoleMessages.GreetUser();
+            string name = ConsoleMessages.askUserName();
+            int partyAmount = ConsoleMessages.askUserPartyAmount();
+            GuestBook.addPartyToGuestBook(guestBook, name, partyAmount);
+        }
+        return guestBook;
+    }
 }
 
