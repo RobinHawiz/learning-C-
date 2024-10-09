@@ -69,7 +69,7 @@ public class ConsoleMessages
     public static void printGuestBook(GuestBookModel guestBook)
     {
         Console.WriteLine("Guest list:");
-        foreach (var guest in guestBook.GetGuestList())
+        foreach (var guest in guestBook.ListOfGuests)
         {
             Console.WriteLine("---------------------");
             Console.WriteLine($"Party name: {guest.partyName}");
