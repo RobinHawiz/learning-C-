@@ -1,6 +1,6 @@
 ﻿namespace WinForm
 {
-    partial class PersonAddressesForm
+    partial class AddressEntry
     {
         /// <summary>
         /// Required designer variable.
