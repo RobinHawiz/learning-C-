@@ -17,3 +17,4 @@ What I learned/accomplished:
 - SQL Database design.
 - Creating a Data Access Layer (for SQL server and SQLite).
 - Dependency injection.
+- Dapper.
