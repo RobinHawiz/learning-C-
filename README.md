@@ -96,7 +96,7 @@ Meaning of different emojis:
   - SQL Server 🟨
   - SQLite 🟨
   - MySQL 🟥
-  - LINQ 🟨
+  - LINQ/Lambdas 🟨
   - APIs 🟥
   - Text files 🟥
   - MongoDB 🟥
