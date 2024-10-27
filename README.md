@@ -85,11 +85,12 @@ Meaning of different emojis:
 - Blazor WebAssembly 🟥
 - xUnit unit testing 🟨
 - Dependency injection 🟨
+- Entity Framework Core 🟥
+- Dapper 🟨
 
 ### Learning list for other related topics:
 - Git 🟨
 - Azure 🟥
-- Dapper 🟨
 - Appsettings 🟨
 - Docker 🟥
 - Data access types:
@@ -101,7 +102,6 @@ Meaning of different emojis:
   - Text files 🟥
   - MongoDB 🟥
   - CosmosDB 🟥
-  - Entity Framework Core 🟥
 
 ## Projects
 This section contains various projects that I work on to solidify my understanding around different .NET/C# concepts.
