@@ -6,7 +6,7 @@ This section show the things I've learned or will work on in the future. Keep in
 
 Meaning of different emojis: 
 
-✅ = I've worked with it and I'm confident with using it.
+✅ = I've worked with it and I'm confident in my ability to use it proficiently.
 
 🟨 = I've worked with it but still need to learn more about it.
 
