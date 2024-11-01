@@ -96,7 +96,6 @@ Meaning of different emojis:
 - Data access types:
   - SQL Server 🟨
   - SQLite 🟨
-  - MySQL 🟥
   - LINQ/Lambdas 🟨
   - APIs 🟥
   - Text files 🟥
