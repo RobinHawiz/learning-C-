@@ -120,5 +120,7 @@ What I learned/accomplished:
 This section contains things that I should keep in mind regarding the development of .NET applications.
 
 - Test your queries before adding them to your data access code.
+  - Don't rely on backups to protect you from making bad decisions.
+  - If you're going to run an update/delete, check with a select statement first to see which rows that are going to be affected.
 
 - Seperate your user interface from your data access.
