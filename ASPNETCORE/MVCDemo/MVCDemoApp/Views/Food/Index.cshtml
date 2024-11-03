@@ -1,0 +1,31 @@
+﻿@using System.Globalization
+@model IEnumerable<DataLibrary.Models.FoodModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Food Menu</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(Model => Model.Id)</th>
+            <th>@Html.DisplayNameFor(Model => Model.Title)</th>
+            <th>@Html.DisplayNameFor(Model => Model.Description)</th>
+            <th>@Html.DisplayNameFor(Model => Model.Price)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.Price.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
