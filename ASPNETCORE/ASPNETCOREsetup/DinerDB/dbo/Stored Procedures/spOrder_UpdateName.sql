@@ -5,7 +5,7 @@ AS
 begin
 	set nocount on;
 
-	update [dbo.Order]
+	update dbo.[Order]
 	set OrderName = @orderName
 	where id = @id;
 end
