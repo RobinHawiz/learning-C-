@@ -5,6 +5,6 @@ begin
 	set nocount on;
 
 	delete 
-	from [dbo.Order]
+	from dbo.[Order]
 	where id = @id;
 end
