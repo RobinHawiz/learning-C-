@@ -12,6 +12,8 @@ Meaning of different emojis:
 
 🟥 = I haven't worked with it but will in the future.
 
+⚙️ = Currently learning/working on.
+
 ### Learning list C#:
 - Variables:
   - Ints ✅
