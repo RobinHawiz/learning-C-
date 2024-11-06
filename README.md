@@ -82,7 +82,7 @@ Meaning of different emojis:
 - WinForms 🟨
 - WPF 🟨
 - ASP.NET Core Razor Pages 🟨
-- ASP.NET Core API 🟥
+- ASP.NET Core API 🟨⚙️
 - Blazor Server 🟥
 - Blazor WebAssembly 🟥
 - xUnit unit testing 🟨
@@ -92,14 +92,14 @@ Meaning of different emojis:
 
 ### Learning list for other related topics:
 - Git 🟨
-- Azure 🟥
+- Azure 🟨⚙️
 - Appsettings 🟨
 - Docker 🟥
 - Data access types:
-  - SQL Server 🟨
+  - SQL Server 🟨⚙️
   - SQLite 🟨
   - LINQ/Lambdas 🟨
-  - APIs 🟥
+  - APIs 🟨⚙️
   - Text files 🟥
   - MongoDB 🟥
   - CosmosDB 🟥
