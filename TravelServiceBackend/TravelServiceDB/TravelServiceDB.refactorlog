@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="2a318380-16b8-456e-b123-a48fd037d46d" ChangeDateTime="11/07/2024 19:25:11">
+    <Property Name="ElementName" Value="[dbo].[Transportations].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Transportations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Price" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c9aa75b2-350f-4bb1-b8e5-aedc7d55cad5" ChangeDateTime="11/07/2024 19:39:52">
+    <Property Name="ElementName" Value="[dbo].[FK_Bookings_]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookings]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Bookings_Transportations]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="68c95423-be5d-422d-81af-7d1aa78c9e43" ChangeDateTime="11/07/2024 19:43:42">
+    <Property Name="ElementName" Value="[dbo].[FK_Bookings_Zontes]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookings]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Bookings_Zonte]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="78b1a566-2279-46f8-a50f-92ec6851e463" ChangeDateTime="11/07/2024 19:43:45">
+    <Property Name="ElementName" Value="[dbo].[FK_Bookings_Zonte]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookings]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Bookings_Zones]" />
+  </Operation>
+</Operations>
