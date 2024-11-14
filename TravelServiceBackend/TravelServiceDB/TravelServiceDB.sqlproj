@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{e665dba5-776e-45db-996b-0a92657f806a}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -66,8 +66,20 @@
     <Build Include="db\Tables\Transportations.sql" />
     <Build Include="db\Tables\Zones.sql" />
     <Build Include="db\Tables\Users.sql" />
+    <Build Include="db\Stored Procedures\spUsers_Insert.sql" />
+    <Build Include="db\Stored Procedures\spUsers_CheckByEmailAddress.sql" />
+    <Build Include="db\Stored Procedures\spUsers_GetByEmailAddressAndPassword.sql" />
+    <Build Include="db\Stored Procedures\spUsers_CheckByEmailAddressAndPassword.sql" />
+    <Build Include="db\Stored Procedures\spBookings_Insert.sql" />
+    <Build Include="db\Stored Procedures\spBookings_GetAllByUserId.sql" />
+    <Build Include="db\Stored Procedures\spBookings_GetById.sql" />
+    <Build Include="db\Stored Procedures\spBookings_Delete.sql" />
+    <Build Include="db\Stored Procedures\spBookings_UpdateAddress.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TravelServiceDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
