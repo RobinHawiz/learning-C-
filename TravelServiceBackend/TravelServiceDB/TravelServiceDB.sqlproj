@@ -80,6 +80,6 @@
     <RefactorLog Include="TravelServiceDB.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\Script.PostDeployment.sql" />
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
