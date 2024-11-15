@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLibrary;
+namespace DataLibrary.Db;
 public class SqlData : IDataAccess
 {
     private readonly IConfiguration _config;
