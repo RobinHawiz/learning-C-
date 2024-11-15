@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataLibrary.Models;
 
-public class BookingData
+public class BookingModel
 {
     public int Id { get; set; }
     public int TransportationId { get; set; }
