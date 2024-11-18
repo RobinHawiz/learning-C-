@@ -69,7 +69,6 @@
     <Build Include="db\Stored Procedures\spUsers_Insert.sql" />
     <Build Include="db\Stored Procedures\spUsers_CheckByEmailAddress.sql" />
     <Build Include="db\Stored Procedures\spUsers_GetByEmailAddressAndPassword.sql" />
-    <Build Include="db\Stored Procedures\spUsers_CheckByEmailAddressAndPassword.sql" />
     <Build Include="db\Stored Procedures\spBookings_Insert.sql" />
     <Build Include="db\Stored Procedures\spBookings_GetAllByUserId.sql" />
     <Build Include="db\Stored Procedures\spBookings_GetById.sql" />
