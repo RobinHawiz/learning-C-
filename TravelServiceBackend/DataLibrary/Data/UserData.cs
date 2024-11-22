@@ -18,10 +18,10 @@ public class UserData
         _connectionStringName = ConnectionStringName;
     }
 
-    public async Task<UserModel> GetByEmailAddressAndPassword(string EmailAddress, string Password)
+    public async Task<UserModel> GetByEmailAddressAndPassword(string emailAddress, string password)
     {
-        return (await _dataAccess.LoadData<dynamic, UserModel>("dbo.spUsers_GetByEmailAddressAndPassword"
-                                                             , new { emailAddress = EmailAddress, password = Password }, _connectionStringName.SqlConnectionName))
+        return (await _dataAccess.LoadData<UserModel, dynamic>("dbo.spUsers_GetByEmailAddressAndPassword"
+                                                             , new { emailAddress, password }, _connectionStringName.SqlConnectionName))
                                                              .FirstOrDefault();
     }
 }

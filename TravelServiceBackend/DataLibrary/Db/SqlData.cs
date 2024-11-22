@@ -18,7 +18,7 @@ public class SqlData : IDataAccess
         _config = config;
     }
 
-    public async Task<List<T>> LoadData<U, T>(string storedProcedure, U parameters, string connectionStringName)
+    public async Task<List<T>> LoadData<T, U>(string storedProcedure, U parameters, string connectionStringName)
     {
         string connectionString = _config.GetConnectionString(connectionStringName);
 
@@ -30,7 +30,7 @@ public class SqlData : IDataAccess
         }
     }
 
-    public async Task<int> SaveData<U>(string storedProcedure, U parameter, string connectionStringName)
+    public async Task<int> SaveData<T>(string storedProcedure, T parameter, string connectionStringName)
     {
         string connectionString = _config.GetConnectionString(connectionStringName);
 
