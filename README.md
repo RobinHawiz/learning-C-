@@ -2,107 +2,97 @@
 This repository represents the initiative I take on my own to learn .NET/C#. The folders inside this repo show the concepts that i've learned/still learning so far. You will also find different sections within this README file that showcase my skills in .NET/C#.
 
 ## List of things to learn
-This section show the things I've learned or will work on in the future. Keep in mind that this is not a list of all things that exist in .NET/C#, but a list of things I've found to be important and want to focus on. This list is ever-changing.
-
-Meaning of different emojis: 
-
-✅ = I've worked with it and I'm confident in my ability to use it proficiently.
-
-🟨 = I've worked with it but still need to learn more about it.
-
-🟥 = I haven't worked with it but will in the future.
-
-⚙️ = Currently learning/working on.
+This section shows the things I've learned so far. Keep in mind that this is not a list of all things that exist in .NET/C#, but a list of things I've found to be important and want to focus on. This list is ever-changing.
 
 ### Learning list C#:
 - Variables:
-  - Ints ✅
-  - Chars ✅
-  - Strings ✅
-  - Booleans ✅
-  - Doubles ✅
-  - Decimals ✅
-  - DateTime 🟨
-  - DateOnly 🟨
-  - TimeOnly 🟨
-  - Nullable value types ✅
-  - Type casting ✅
+  - Ints
+  - Chars
+  - Strings
+  - Booleans
+  - Doubles 
+  - Decimals
+  - DateTime
+  - DateOnly
+  - TimeOnly
+  - Nullable value types
+  - Type casting
 - Generic collections:
-  - Lists ✅
-  - Dictionaries ✅
+  - Lists
+  - Dictionaries
 - Other data structures:
-  - Arrays ✅
-  - Tuples ✅
+  - Arrays
+  - Tuples
 - Statements:
   - Selection statements:
-    - if ✅
-    - switch ✅
+    - if
+    - switch
   - Iteration statements:
-    - do ✅
-    - for ✅
-    - foreach ✅
-    - while ✅
+    - do
+    - for
+    - foreach
+    - while
   - Jump statements:
-    - break ✅
-    - continue ✅
-    - return ✅
+    - break
+    - continue
+    - return
   - Exception-handling statements:
-    - throw 🟨
-    - try-catch 🟨
-    - try-finally 🟨
-    - try-catch-finally 🟨
+    - throw
+    - try-catch
+    - try-finally
+    - try-catch-finally
 - Classes:
   - Class types:
-    - Static Classes ✅
-    - Instantiated Classes ✅
-    - Abstract Classes ✅
+    - Static Classes
+    - Instantiated Classes
+    - Abstract Classes
   - Class options:
-    - Property types ✅
-    - Namespaces ✅
+    - Property types
+    - Namespaces
 - Access Modifiers:
-  - public ✅
-  - private ✅
-  - protected 🟨
-  - internal 🟨
-  - protected internal 🟥
-  - private protected 🟥
+  - public
+  - private
+  - protected
+  - internal
+  - protected internal
+  - private protected
 - Methods:
-  - Method overloading ✅
-  - Method overriding ✅
-  - Extension methods ✅
+  - Method overloading
+  - Method overriding
+  - Extension methods
 - Other:
-  - Interfaces ✅
-  - Generics ✅
-  - Events 🟨
-  - Basic debugging ✅ (using breakpoints, reading callstack, etc)
+  - Interfaces
+  - Generics
+  - Events
+  - Debugging (using breakpoints, reading callstack, etc)
 
 ### Learning list .NET:
-- Class Libraries ✅
-- Console App ✅
-- WinForms 🟨
-- WPF 🟨
-- ASP.NET Core Razor Pages 🟨
-- ASP.NET Core API 🟨⚙️
-- Blazor Server 🟥
-- Blazor WebAssembly 🟥
-- xUnit unit testing 🟨
-- Dependency injection 🟨
-- Entity Framework Core 🟥
-- Dapper 🟨
+- Class Libraries
+- Console App
+- WinForms
+- WPF
+- ASP.NET Core Razor Pages
+- ASP.NET Core API
+- Blazor Server [Not learned yet]
+- Blazor WebAssembly [Not learned yet]
+- xUnit unit testing
+- Dependency injection
+- Entity Framework Core
+- Dapper
 
 ### Learning list for other related topics:
-- Git 🟨
-- Azure 🟨⚙️
-- Appsettings 🟨
-- Docker 🟥
+- Git
+- Azure
+- Appsettings
+- Docker [Not learned yet]
 - Data access types:
-  - SQL Server 🟨⚙️
-  - SQLite 🟨
-  - LINQ/Lambdas 🟨
-  - APIs 🟨⚙️
-  - Text files 🟥
-  - MongoDB 🟥
-  - CosmosDB 🟥
+  - SQL Server
+  - SQLite
+  - LINQ/Lambdas
+  - APIs
+  - Text files
+  - MongoDB [Not learned yet]
+  - CosmosDB [Not learned yet]
 
 ## Projects
 This section contains various projects that I work on to solidify my understanding around different .NET/C# concepts.
