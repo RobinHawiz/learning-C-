@@ -24,4 +24,11 @@ public class UserData
                                                              , new { emailAddress, password }, _connectionStringName.SqlConnectionName))
                                                              .FirstOrDefault();
     }
+    public async Task<int> CheckByEmailAddress(string emailAddress)
+    {
+        return (await _dataAccess.LoadData<int, dynamic>("dbo.spUsers_CheckByEmailAddress"
+                                                            , new { emailAddress }
+                                                            , _connectionStringName.SqlConnectionName))
+                                                            .FirstOrDefault();
+    }
 }
