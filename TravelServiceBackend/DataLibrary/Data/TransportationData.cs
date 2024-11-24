@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLibrary.Data;
-public class TransportationData
+public class TransportationData : ITransportationData
 {
     private readonly IDataAccess _dataAccess;
     private readonly ConnectionStringData _connectionStringName;

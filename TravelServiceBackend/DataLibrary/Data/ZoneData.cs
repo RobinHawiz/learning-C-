@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLibrary.Data;
-public class ZoneData
+public class ZoneData : IZoneData
 {
     private readonly IDataAccess _dataAccess;
     private readonly ConnectionStringData _connectionStringName;
