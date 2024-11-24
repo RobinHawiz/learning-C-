@@ -1,18 +1,21 @@
 ﻿CREATE PROCEDURE [dbo].[spBookings_Insert]
-	@transportationId int,
-	@zoneId int,
-	@userId int,
-	@startDate datetime2,
-	@endDate datetime2,
-	@wheelChair bit,
-	@totalCost money,
-	@addressFrom nvarchar(100),
-	@addressTo nvarchar(100)
+	@TransportationId int,
+	@ZoneId int,
+	@UserId int,
+	@StartDate datetime2,
+	@EndDate datetime2,
+	@WheelChair bit,
+	@TotalCost money,
+	@AddressFrom nvarchar(100),
+	@AddressTo nvarchar(100),
+	@Id int output
 AS
 begin
 	set nocount on;
 
 	insert dbo.Bookings (TransportationId, ZoneId, UserId, StartDate, EndDate, Wheelchair, TotalCost, AddressFrom, AddressTo)
-				 values (@transportationId, @zoneId, @userId, @startDate, @endDate, @wheelChair, @totalCost, @addressFrom, @addressTo)
+				 values (@TransportationId, @ZoneId, @UserId, @StartDate, @EndDate, @WheelChair, @TotalCost, @AddressFrom, @AddressTo);
+
+	set @Id = SCOPE_IDENTITY();
 
 end
