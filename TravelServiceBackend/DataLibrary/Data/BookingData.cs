@@ -1,7 +1,9 @@
-﻿using DataLibrary.Db;
+﻿using Dapper;
+using DataLibrary.Db;
 using DataLibrary.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,5 +30,25 @@ public class BookingData
         return await _dataAccess.LoadData<BookingModel, dynamic>("dbo.spBookings_GetAllByUserId"
                                                                , new { userId }
                                                                , _connectionStringName.SqlConnectionName);
+    }
+    public async Task<int> Insert(BookingModel booking)
+    {
+        DynamicParameters p = new DynamicParameters();
+        p.Add("TransportationId", booking.TransportationId);
+        p.Add("ZoneId", booking.ZoneId);
+        p.Add("UserId", booking.UserId);
+        p.Add("StartDate", booking.StartDate);
+        p.Add("EndDate", booking.EndDate);
+        p.Add("WheelChair", booking.WheelChair);
+        p.Add("TotalCost", booking.TotalCost);
+        p.Add("AddressFrom", booking.AddressFrom);
+        p.Add("AddressTo", booking.AddressTo);
+        p.Add("Id", DbType.Int32, direction: ParameterDirection.Output);
+
+        await _dataAccess.SaveData("dbo.spBookings_Insert"
+                                 , p
+                                 , _connectionStringName.SqlConnectionName);
+
+        return p.Get<int>("Id");
     }
 }
