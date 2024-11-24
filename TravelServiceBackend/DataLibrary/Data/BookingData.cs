@@ -23,4 +23,10 @@ public class BookingData
                                                               , _connectionStringName.SqlConnectionName))
                                                               .FirstOrDefault();
     }
+    public async Task<List<BookingModel>> GetAllByUserId(int userId)
+    {
+        return await _dataAccess.LoadData<BookingModel, dynamic>("dbo.spBookings_GetAllByUserId"
+                                                               , new { userId }
+                                                               , _connectionStringName.SqlConnectionName);
+    }
 }
