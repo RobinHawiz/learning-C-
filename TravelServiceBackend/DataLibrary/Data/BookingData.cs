@@ -51,4 +51,16 @@ public class BookingData
 
         return p.Get<int>("Id");
     }
+    public async void UpdateAddress(int id, int zoneId, DateTime addressFrom, DateTime addressTo)
+    {
+        await _dataAccess.SaveData("dbo.spBookings_UpdateAddress"
+                                 , new { Id = id, ZoneId = zoneId, AddressFrom = addressFrom, AddressTo = addressTo }
+                                 , _connectionStringName.SqlConnectionName);
+    }
+    public async void Delete(int id)
+    {
+        await _dataAccess.SaveData("dbo.spBookings_Delete"
+                                 , new { Id = id }
+                                 , _connectionStringName.SqlConnectionName);
+    }
 }
