@@ -16,10 +16,10 @@ public class BookingData
         _dataAccess = dataAccess;
         _connectionStringName = connectionStringName;
     }
-    public async Task<BookingModel> GetById(int userId)
+    public async Task<BookingModel> GetById(int id)
     {
         return (await _dataAccess.LoadData<BookingModel, object>("dbo.spBookings_GetById"
-                                                              , new { userId }
+                                                              , new { id }
                                                               , _connectionStringName.SqlConnectionName))
                                                               .FirstOrDefault();
     }
