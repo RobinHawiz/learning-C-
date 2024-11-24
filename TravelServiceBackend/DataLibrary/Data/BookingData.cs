@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLibrary.Data;
-public class BookingData
+public class BookingData : IBookingData
 {
     private readonly IDataAccess _dataAccess;
     private readonly ConnectionStringData _connectionStringName;
