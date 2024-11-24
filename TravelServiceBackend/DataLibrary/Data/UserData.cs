@@ -31,4 +31,8 @@ public class UserData
                                                             , _connectionStringName.SqlConnectionName))
                                                             .FirstOrDefault();
     }
+    public async void Insert(UserModel user)
+    {
+        await _dataAccess.SaveData("dbo.spUsers_Insert", user, _connectionStringName.SqlConnectionName);
+    }
 }
