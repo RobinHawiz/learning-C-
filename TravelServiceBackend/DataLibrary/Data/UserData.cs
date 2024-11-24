@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLibrary.Data;
-public class UserData
+public class UserData : IUserData
 {
     private readonly IDataAccess _dataAccess;
     private readonly ConnectionStringData _connectionStringName;
