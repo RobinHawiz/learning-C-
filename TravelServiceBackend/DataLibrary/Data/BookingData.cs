@@ -1,4 +1,5 @@
 ﻿using DataLibrary.Db;
+using DataLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,12 @@ public class BookingData
     {
         _dataAccess = dataAccess;
         _connectionStringName = connectionStringName;
+    }
+    public async Task<BookingModel> GetById(int userId)
+    {
+        return (await _dataAccess.LoadData<BookingModel, object>("dbo.spBookings_GetById"
+                                                              , new { userId }
+                                                              , _connectionStringName.SqlConnectionName))
+                                                              .FirstOrDefault();
     }
 }
