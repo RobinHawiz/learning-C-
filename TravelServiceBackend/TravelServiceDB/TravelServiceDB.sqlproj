@@ -76,6 +76,8 @@
     <Build Include="db\Stored Procedures\spBookings_UpdateAddress.sql" />
     <Build Include="db\Stored Procedures\spTransportations_GetById.sql" />
     <Build Include="db\Stored Procedures\spZones_GetById.sql" />
+    <Build Include="db\Stored Procedures\spZones_GetAll.sql" />
+    <Build Include="db\Stored Procedures\spTransportations_GetAll.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TravelServiceDB.refactorlog" />
